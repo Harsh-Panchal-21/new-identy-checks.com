@@ -1,0 +1,98 @@
+/*
+
+Title:		jShowOff: a jQuery Content Rotator Plugin
+Author:		Erik Kallevig
+Version:	0.1.2
+Website:	http://ekallevig.com/jshowoff
+License: 	Dual licensed under the MIT and GPL licenses.
+
+*/
+
+
+
+/*-- jShowOff module styles --*/
+
+
+#features, #slidingFeatures, #labelFeatures, #basicFeatures, #thumbFeatures {
+	background: #ffffff;
+	position: relative;
+	overflow: hidden;
+	width: 640px;
+	height: 274px;
+	float:right;
+	padding:7px;
+	-moz-box-shadow:0px 0px 10px 3px #777777;
+    -webkit-box-shadow:0px 0px 10px 3px #777777;
+     box-shadow:0px 0px 10px 3px #777777;
+     border:1px solid #efefef;
+	}
+.jshowoff {
+	width: 984px;
+	margin: 0px 0;
+	}
+.jshowoff div {	
+	height: 288px;
+	}
+#basicFeatures, .jshowoff.basicFeatures, .jshowoff.basicFeatures img, .jshowoff.basicFeatures div {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	}
+
+.jshowoff p {
+	font-size: 20px;
+	line-height: 22px;
+	color:#30368E;
+	}
+.eddie {
+	float: right;
+	padding: 15px 20px 15px 20px;
+	}
+.jshowoff p.jshowoff-slidelinks {
+	float:left;
+	margin: 70px 0px 0px 0px;
+	padding: 0;
+	}
+.jshowoff-slidelinks a, .jshowoff-controls a {
+	display: block;
+	width:318px;
+    height:26px;
+    padding:5px;
+    margin-top:5px;
+    background:url('../img/homeSlideBtnBack.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	color: #30368E;
+	text-decoration: none;
+	outline: none;
+	font-size: 23px;
+	line-height: 25px;
+	text-align:left;
+	}
+.jshowoff-slidelinks a:hover, .jshowoff-controls a:hover {
+	color: #ff0000;
+	background:url('../img/homeSlideBtnBackO.png');
+	}
+.jshowoff-slidelinks a.jshowoff-active, .jshowoff-slidelinks a.jshowoff-active:hover {
+	background:url('../img/homeSlideBtnBackO.png');
+	color: #ff0000;
+	}
+p.jshowoff-controls {
+	overflow: auto;
+	height: 1%;
+	padding: 0 0 5px 5px;
+	margin: 0;
+	}
+.jshowoff-controls a 
+{
+    
+	margin: 5px 5px 0 0;
+	font-size: 12px;
+	line-height: 15px;
+	padding: 4px 8px 5px;
+	}
+
+.jshowoff-pausetext {
+	color: #fff;
+	}
+
+

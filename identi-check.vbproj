@@ -1,0 +1,181 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProductVersion>8.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC0E1106-5F5B-4A7E-958D-F3E5096D053D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>identi-check</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>identi_check</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>20</FileUpgradeFlags>
+    <MyType>Windows</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>identi-check.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>identi-check.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.asp" />
+    <Content Include="admin1.asp" />
+    <Content Include="admin_detail.asp" />
+    <Content Include="admin_new.asp" />
+    <Content Include="admin_pending.asp" />
+    <Content Include="admin_pricing.asp" />
+    <Content Include="adovbs.inc" />
+    <Content Include="banner.inc" />
+    <Content Include="candidate.asp" />
+    <Content Include="candidate_update.asp" />
+    <Content Include="checkpass.asp" />
+    <Content Include="contact.asp" />
+    <Content Include="delete.asp" />
+    <Content Include="delete_candidate.asp" />
+    <Content Include="faq.asp" />
+    <Content Include="functions.inc" />
+    <Content Include="Global.asax" />
+    <Content Include="identi.css" />
+    <Content Include="images\bottom_bar.jpg" />
+    <Content Include="images\bottom_tab.gif" />
+    <Content Include="images\btn_bar1.gif" />
+    <Content Include="images\contact_us.gif" />
+    <Content Include="images\contact_us_over.gif" />
+    <Content Include="images\faq.gif" />
+    <Content Include="images\faq_over.gif" />
+    <Content Include="images\home.gif" />
+    <Content Include="images\home_over.gif" />
+    <Content Include="images\know.gif" />
+    <Content Include="images\line_01.gif" />
+    <Content Include="images\magnifyBkg.jpg" />
+    <Content Include="images\NAPBS.gif" />
+    <Content Include="images\news.jpg" />
+    <Content Include="images\news_over.gif" />
+    <Content Include="images\services.gif" />
+    <Content Include="images\services_over.gif" />
+    <Content Include="images\specialOffer.gif" />
+    <Content Include="images\top_banner.jpg" />
+    <Content Include="images\welcome.gif" />
+    <Content Include="images\welc_line.gif" />
+    <Content Include="index.asp" />
+    <Content Include="input_result.asp" />
+    <Content Include="login.inc" />
+    <Content Include="log_update.asp" />
+    <Content Include="main.asp" />
+    <Content Include="news.asp" />
+    <Content Include="price.asp" />
+    <Content Include="pricing.asp" />
+    <Content Include="services.asp" />
+    <Content Include="show_price1.asp" />
+    <Content Include="show_result.asp" />
+    <Content Include="start.asp" />
+    <Content Include="Styles.css" />
+    <Content Include="subscriber.asp" />
+    <Content Include="ThankYou.asp" />
+    <Content Include="undelete_candidate.asp" />
+    <Content Include="update_result.asp" />
+    <Content Include="Web.config" />
+    <None Include="agreement.pdf" />
+    <None Include="candidate.pdf" />
+    <None Include="DB.fun" />
+    <None Include="db_constants.fun" />
+    <None Include="identi-check.vsdisco" />
+    <None Include="subscriber.pdf" />
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+</Project>

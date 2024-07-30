@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* *************************************** LEFT SIDE TAB CSS ************************************** */
+	#left-tab-top {
+		background-image: url(../images/tab_01.png);
+		background-repeat: no-repeat;
+		max-height: 23px;
+		min-height: 23px;
+		font-weight: bold;
+		text-align: right;
+		padding-right: 50px;
+	}
+	
+	#left-tab-middle {
+		background-image: url(../images/tab_03.png);
+		background-repeat: repeat-y;
+		padding: 10px;
+		font-size: 12px;
+		text-align: left;
+		min-height: 375px;
+	}
+	
+	#left-tab-bottom {
+		background-image: url(../images/tab_05.png);
+		background-repeat: no-repeat;
+		max-height: 2px;
+		min-height: 2px;
+	}
+/* *************************************** END LEFT TAB CSS **************************************** */
+
+/* ************************************* RIGHT-CREDIT TAB CSS ************************************** */	
+	#right-credit-bottom {
+		background-image: url(../images/credit-tab_07.png);
+		background-repeat: no-repeat;
+		max-height: 23px;
+		min-height: 23px;
+		font-weight: bold;
+		text-align: left;
+		padding-left: 50px;
+		line-height: 225%;
+	}
+/* ********************************** END RIGHT-CREDIT TAB CSS *********************************** */

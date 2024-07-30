@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* *************************************** GENERAL CSS *************************************** */
+	body {
+		background-color: #ffffff;
+		margin: 0 auto;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		color: #000000;
+	}
+	
+	a {
+		color: #eb2727;
+	}
+	
+	img {
+		border: 0px;
+	}
+	
+	h5 {
+		margin: 0;
+	}
+	
+	.big_text {
+		font-size: 13px;
+		font-weight: bold;
+	}
+	
+	ul {
+		/*margin: 0px 0px 10px 15px;*/
+		margin-top: 0px;
+		font-size: 12px;
+	}
+/* ************************************* END GENERAL CSS ************************************* */
+
+/* *********************************** GRAPHIC LAYOUT CSS ************************************ */
+	#head {
+		width: 900px;
+		height: 142px;
+		margin: 0 auto;
+	}
+	
+	#logo {
+		width: 318px;
+		height: 142px;
+		float: left;
+	}
+	
+	#topnav {
+		width: 582px;
+		height: 142px;
+		float: right;
+	}
+	
+	#menu {
+		padding:0;
+		margin:0;
+		white-space:nowrap;
+		list-style-type:none;
+	}
+	
+	#menu li {
+		display:inline;
+	}
+	
+	#menu li a {
+		padding:0;
+		float:left;
+	}
+	#main {
+		margin: 0 auto;
+		width: 900px;
+	}
+	
+	#left {
+		width: 162px;
+		float: left;
+	}
+	
+	#middle {
+		width: 619px;
+		float: left;
+		margin: 0 auto;
+		min-height: 419px;
+		background-color: #221e1f;
+		background-image: url(../images/middle.png);
+		background-repeat: repeat-y;
+	}
+	
+	#right {
+		width: 119px;
+		float: right;
+		min-height: 419px;
+		background-image: url(../images/right.png);
+	}
+	
+	#foot {
+		margin: 0 auto;
+		width: 900px;
+		height: 114px;
+/*		background-image: url(../images/bottom.png);
+		background-repeat: no-repeat; */
+		clear: both;
+	}
+/* ********************************* END GRAPHIC LAYOUT CSS ********************************** */
+
+/* **************************************** TABLES CSS *************************************** */
+	
+	#table_reg {
+		width: 100%;
+		border: thin solid #666;
+		border-collapse: collapse;
+		font-size:10px;
+	}
+	
+	#table_wide {
+		border: thin solid #666;
+		border-collapse: collapse;
+		font-size:10px;
+	}
+	
+	#table_wide th,
+	#table_reg th {
+		font-weight: bolder;
+		text-align: center;
+		color: #ffffff;
+		border: thin solid #666;
+		background-color: #666666;
+		font-size:11px;
+	}
+	
+	#table_wide td,
+	#table_reg td {
+		border: thin solid #666;
+	}

@@ -1,0 +1,73 @@
+﻿<%@ Master Language="VB" CodeFile="AdminMaster.master.vb" Inherits="AdminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin Functions</title>
+    <link href="/css/NewBackEndStyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36673331-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+      <telerik:RadScriptManager ID="RadScriptManager1" runat="server"></telerik:RadScriptManager>
+      <div id="holder" style="width:100%" align="center">
+      <div id="main" style="background:white;">
+      <div id="header" style="width:100%" align="center">
+      <div id="headLeft"  align="left">
+      <div id="leftHeadNav">
+      <a href="Default.aspx">HOME</a><a href="Register.aspx">REGISTER</a><a href="AboutUs.aspx">ABOUT US</a><a href="ContactUs.aspx">CONTACT US</a>
+      </div><!--end leftHeadnav-->
+
+
+      <div style="clear:both"></div>
+      </div><!--end header-->
+
+      <div id="content" align="left">
+      <center>
+      <table width="900px" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+            <td width="100%"  align="center" class="menu">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                      <td align="center" class="menu">
+                          Welcome: <asp:Label ID="lblUser" runat="server"></asp:Label><br />
+                          <hr>
+                          <h4 align="center">
+                              <a href="admin.aspx">Company List</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+                              <a href="admin1.aspx">Candidate List</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+                              <a href="admin_pricing.aspx">Pricing List</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+                              <a href="admin_pending.aspx">Pending List</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+                              <a href="admin_new.aspx">New List</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+                              <a href="admin_invoice.aspx">Monthly Invoices</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+												      <a href="EnterUcc.aspx" target='_blank'>UCC Admin</a>
+                          </h4>
+                      </td>
+                  </tr>
+              </table>
+              </td>
+          </tr>
+      </table>
+      </center>
+          <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            
+          </asp:ContentPlaceHolder>
+        </div><!--end content-->
+      </div><!--end main-->
+    </div><!--end holder-->
+  </form>
+</body>
+</html>

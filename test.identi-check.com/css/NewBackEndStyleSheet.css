@@ -1,0 +1,255 @@
+﻿body 
+{
+    margin:0px;
+    padding:0px;
+    background:url('../img/bodyBack.png');
+    background-repeat:repeat;
+    font-family:Oxygen;
+}
+.linkBtn {
+	display: block;
+	width:318px;
+    height:26px;
+    padding:5px;
+    margin-top:2px;
+    background:url('../img/homeSlideBtnBack.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	color: #30368E;
+	text-decoration: none;
+	outline: none;
+	font-size: 13px;
+	line-height: 25px;
+	text-align:left;
+	}
+.linkBtn:hover{
+	color: #ff0000;
+	font-size: 13px;
+	background:url('../img/homeSlideBtnBackO.png');
+	}
+#main 
+{
+    -moz-box-shadow:0px 0px 10px 3px #777777;
+    -webkit-box-shadow:0px 0px 10px 3px #777777;
+     box-shadow:0px 0px 10px 3px #777777;
+     min-width:984px; 
+     max-width:1500px;
+     padding:20px; 
+}
+#headLeft
+{
+    width:648px;
+    height:141px;
+    background:url('../img/topLeft.png');
+    background-repeat:no-repeat;
+    background-position:top left;
+}
+#headRight
+{
+    width:306px;
+    height:121px;
+    padding:10px;
+    background:url('../img/blueBack.png');
+    background-repeat:no-repeat;
+    background-position:center;
+}
+#content
+{
+    width:100%;
+    margin-top:20px;
+}
+#leftHeadNav
+{
+    padding:10px;
+}
+#leftHeadNav a
+{
+    color:White;
+    font-size:17px;
+    text-decoration:none;
+    line-height:16px;
+    padding-right:35px;
+}
+#leftHeadNav a:hover
+{
+    color:#EA2627;
+}
+#bottomLinkNav
+{
+    width:100%;
+    margin-top:20px;
+}
+img
+{
+    border:0;
+}
+#footer
+{
+    width:944px;
+    padding:20px;
+    margin-top:20px;
+}
+#idcBtmLinks
+{
+    float:left;
+    width:201px;
+}
+#nabps
+{
+    float:left;
+    width:201px;
+}
+#serviceLinks
+{
+    float:left;
+    width:462px;
+}
+.btmSpacer
+{
+    float:left;
+    width:40px;
+    height:94px;
+    background:url('../img/whiteSpace.png');
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+#footer h1
+{
+    font-family:Oxygen;
+    font-size:24px;
+    color:White;
+    line-height:24px;
+    margin:0px;
+    padding:0px;
+}
+#footer a
+{
+    font-family:Oxygen;
+    font-size:14px;
+    color:White;
+    line-height:20px;
+    margin:0px;
+    padding:0px;
+    text-decoration:none;
+}
+#footer a:hover
+{
+    color:#ff0000;
+}
+#homeSlideHold
+{
+    width:100%;
+/*    background:url('../img/busSolutions.png'); */
+    background-repeat:no-repeat;
+    background-position:15px top;
+}
+h1
+{
+    font-size:30px;
+    color:#30368E;
+}
+p
+{
+    font-size:10px;
+    color:#30368E;
+}
+h2
+{
+    font-size:24px;
+    color:#30368E;
+}
+ul
+{
+    font-size:20px;
+    color:#30368E;
+}
+ul a
+{
+    font-size:20px;
+    color:#ff0000;
+    text-decoration:none;
+}
+ul a:hover
+{
+    font-size:20px;
+    color:#999999;
+    text-decoration:none;
+}
+a
+{
+    font-size:20px;
+    color:#ff0000;
+    text-decoration:none;
+}
+a:hover
+{
+    font-size:20px;
+    color:#999999;
+    text-decoration:none;
+}
+strong
+{
+    font-weight:bold;
+}
+
+#table_reg {
+		width: 100%;
+		border: thin solid #666;
+		border-collapse: collapse;
+		font-size:10px;
+	}
+	
+	#table_wide {
+		border: thin solid #666;
+		border-collapse: collapse;
+		font-size:12px;
+		font-weight:bold;
+	}
+	#table_wide td{
+		padding:2px;
+	}
+	
+	#table_wide th,
+	#table_reg th {
+		font-weight: bolder;
+		text-align: center;
+		color: #ffffff;
+		border: thin solid #666;
+		background-color: #666666;
+		font-size:12px;
+	}
+	
+	#table_wide td,
+	#table_reg td {
+		border: thin solid #666;
+		font-weight:bold;
+		font-size:12px;
+		padding:2px;
+	}
+
+table td .menu
+{
+    border:0;
+}
+table a
+{
+    font-size:12px;
+    color:#ff0000;
+    text-decoration:none;
+}
+table a:hover
+{
+    font-size:12px;
+    color:#999999;
+    text-decoration:none;
+}
+h4 a
+{
+    font-size:15px;
+}
+h4 a:hover
+{
+    font-size:15px;
+    color:#999999;
+    text-decoration:none;
+}

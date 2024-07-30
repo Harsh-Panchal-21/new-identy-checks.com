@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "identi-check", "http://test.identi-check.com/identi-check.vbproj", "{DC0E1106-5F5B-4A7E-958D-F3E5096D053D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC0E1106-5F5B-4A7E-958D-F3E5096D053D}.Debug|Default.ActiveCfg = Debug|.NET
+		{DC0E1106-5F5B-4A7E-958D-F3E5096D053D}.Debug|Default.Build.0 = Debug|.NET
+		{DC0E1106-5F5B-4A7E-958D-F3E5096D053D}.Release|Default.ActiveCfg = Release|.NET
+		{DC0E1106-5F5B-4A7E-958D-F3E5096D053D}.Release|Default.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

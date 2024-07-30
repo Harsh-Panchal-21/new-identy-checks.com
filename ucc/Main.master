@@ -1,0 +1,107 @@
+﻿<%@ Master Language="VB" CodeFile="Main.master.vb" Inherits="MainMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>::: Identi-Check ::: UCC App</title>
+    <meta name="KEYWORDS" content="Springfield, Illinois, Background Check, Identity Check, Credit History, Statewide Criminal History, Federal Criminal History, County Criminal History, Sex Offender Check, Employment Verification, Education Verification, MVR, Motor Vehicle Report, Civil Search, Workers Compensation Report, Social Security Number Verification and Trace, Military Verification, Professional License Verification, Corporation Search, Drug Testing, Background Check, Employment Background Check, Employee's background, Employee, Employment, Screen, Screening" />
+    <meta name="DESCRIPTION" content="Identi-check, Inc. provides full service pre-employment background screenings for both the private and public sectors." />
+    <link href="/css/NewBackEndStyleSheet.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder id="headA" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+      <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnableScriptCombine="false"></telerik:RadScriptManager>
+			<script type="text/javascript">
+		    Sys.Application.add_init(__AppInit);
+		    var __pageManager;
+
+		    function __AppInit() {
+			    __pageManager = Sys.WebForms.PageRequestManager.getInstance();
+			    __pageManager.add_endRequest(__EndRequest);
+		    }
+
+		    function __EndRequest(sender, args) {
+			    if (args.get_error() != undefined) {
+				    alert("Ouch!");
+				    var errorMessage = args.get_error().message;
+				    alert(args.get_error().message);
+				    //jQuery('#errorDialog').html(htmlEncode(errorMessage).replace(":", "<br />"));
+				    args.set_errorHandled(true);
+			    }
+			    function htmlEncode(value) {
+				    return jQuery('<div/>').text(value).html();
+			    }
+		    }
+	    </script>
+     <div id="holder" style="width:100%" align="center">
+<div id="main" style="background:white;">
+<div id="header" style="width:100%" align="center">
+<div id="headLeft"  align="left">
+<div id="leftHeadNav">
+<a href="../Default.asp">HOME</a><a href="../Register.asp">REGISTER</a><a href="../AboutUs.asp">ABOUT US</a><a href="../ContactUs.asp">CONTACT US</a>
+</div><!--end leftHeadnav-->
+
+
+<div style="clear:both"></div>
+</div><!--end header-->
+
+<div id="content" align="center">
+      <div id="main1">
+          <table width="870px" height="419" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+          <td width="861px" valign="top" align="center">
+            <table width="841px" cellpadding="0" cellspacing="0" border="0">
+            	<tr>
+                <td align="center">
+                  Welcome <asp:Label ID="lblWelcomeName" runat="server"></asp:Label> - <a href="logout.aspx">(logout)</a><hr />
+                  <table cellpadding="0" cellspacing="0" border="0" style="text-align: center;">
+                    <tr><td>
+                      <telerik:RadMenu runat="server" ID="rmOne">
+                        <Items>
+                          <telerik:RadMenuItem Text="Debtors" NavigateUrl="debtors.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="Start UCC1" NavigateUrl="ucc1.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="Start UCC3" NavigateUrl="ucc3.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="Start UCC11" NavigateUrl="ucc11.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="Filings/Searches" NavigateUrl="main.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="Reports" NavigateUrl="reports.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="My Info" NavigateUrl="myinfo.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="User Guide" NavigateUrl="pdf/FSAguide.pdf" target="_blank"></telerik:RadMenuItem>
+                        </Items>
+                      </telerik:RadMenu>
+                      <telerik:RadMenu runat="server" ID="rmAdmin" Visible="false">
+                        <Items>
+                          <telerik:RadMenuItem Text="Debtors" NavigateUrl="debtors.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="Filings/Searches" NavigateUrl="ucc_admin.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="Reports" NavigateUrl="admin_reports.aspx"></telerik:RadMenuItem>
+                          
+                        </Items>
+                      </telerik:RadMenu>
+                    </td></tr>
+                  </table>
+                  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    
+                  </asp:ContentPlaceHolder>
+                </td>
+              </tr>
+            </table>
+          </td>
+          </tr>
+          </table>
+        </div>    
+    </div><!--end content-->
+
+
+
+
+
+ 
+
+</div><!--end main-->
+</div><!--end holder-->
+    </form>
+</body>
+</html>

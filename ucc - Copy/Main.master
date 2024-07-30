@@ -1,0 +1,112 @@
+﻿<%@ Master Language="VB" CodeFile="Main.master.vb" Inherits="MainMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>::: Identi-Check ::: UCC App</title>
+    <meta name="KEYWORDS" content="Springfield, Illinois, Background Check, Identity Check, Credit History, Statewide Criminal History, Federal Criminal History, County Criminal History, Sex Offender Check, Employment Verification, Education Verification, MVR, Motor Vehicle Report, Civil Search, Workers Compensation Report, Social Security Number Verification and Trace, Military Verification, Professional License Verification, Corporation Search, Drug Testing, Background Check, Employment Background Check, Employee's background, Employee, Employment, Screen, Screening" />
+    <meta name="DESCRIPTION" content="Identi-check, Inc. provides full service pre-employment background screenings for both the private and public sectors." />
+    <link href="/css/NewBackEndStyleSheet.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+      function MM_swapImgRestore() { //v3.0
+        var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+      }
+
+      function MM_preloadImages() { //v3.0
+        var d = document; if (d.images) {
+          if (!d.MM_p) d.MM_p = new Array();
+          var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+            if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; } 
+        }
+      }
+
+      function MM_findObj(n, d) { //v4.01
+        var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+          d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+        }
+        if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+        for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+        if (!x && d.getElementById) x = d.getElementById(n); return x;
+      }
+
+      function MM_swapImage() { //v3.0
+        var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+          if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+      }
+    </script>
+    <asp:ContentPlaceHolder id="head19" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+      <telerik:RadScriptManager ID="RadScriptManager1" runat="server"></telerik:RadScriptManager>
+     <div id="holder" style="width:100%" align="center">
+<div id="main" style="background:white;">
+<div id="header" style="width:100%" align="center">
+<div id="headLeft"  align="left">
+<div id="leftHeadNav">
+<a href="../Default.asp">HOME</a><a href="../Register.asp">REGISTER</a><a href="../AboutUs.asp">ABOUT US</a><a href="../ContactUs.asp">CONTACT US</a>
+</div><!--end leftHeadnav-->
+
+
+<div style="clear:both"></div>
+</div><!--end header-->
+
+<div id="content" align="center">
+      <div id="main1">
+          <table width="870px" height="419" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+          <td width="861px" valign="top" align="center">
+            <table width="841px" cellpadding="0" cellspacing="0" border="0">
+            	<tr>
+                <td align="center">
+                  Welcome <asp:Label ID="lblWelcomeName" runat="server"></asp:Label> - <a href="logout.aspx">(logout)</a><hr />
+                  <table cellpadding="0" cellspacing="0" border="0" style="text-align: center;">
+                    <tr><td>
+                      <telerik:RadMenu runat="server" ID="rmOne">
+                        <Items>
+                          <telerik:RadMenuItem Text="Debtors" NavigateUrl="debtors.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="Start UCC1" NavigateUrl="ucc1.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="Start UCC3" NavigateUrl="ucc3.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="Start UCC11" NavigateUrl="ucc11.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="Filings/Searches" NavigateUrl="main.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="Reports" NavigateUrl="reports.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="My Info" NavigateUrl="myinfo.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="User Guide" NavigateUrl="pdf/FSAguide.pdf" target="_blank"></telerik:RadMenuItem>
+                        </Items>
+                      </telerik:RadMenu>
+                      <telerik:RadMenu runat="server" ID="rmAdmin" Visible="false">
+                        <Items>
+                          <telerik:RadMenuItem Text="Debtors" NavigateUrl="debtors.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="Filings/Searches" NavigateUrl="ucc_admin.aspx"></telerik:RadMenuItem>
+                          <telerik:RadMenuItem Text="Reports" NavigateUrl="admin_reports.aspx"></telerik:RadMenuItem>
+                          
+                        </Items>
+                      </telerik:RadMenu>
+                    </td></tr>
+                  </table>
+                  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    
+                  </asp:ContentPlaceHolder>
+                </td>
+              </tr>
+            </table>
+          </td>
+          </tr>
+          </table>
+        </div>    
+    </div><!--end content-->
+
+
+
+
+
+ 
+
+</div><!--end main-->
+</div><!--end holder-->
+    </form>
+</body>
+</html>

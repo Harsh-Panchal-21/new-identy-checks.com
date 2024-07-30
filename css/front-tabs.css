@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+/* *************************************** MISSION TAB CSS *************************************** */
+	#mission-top {
+		background-image: url(../images/mission-tab_01.png);
+		background-repeat: no-repeat;
+		max-height: 23px;
+		min-height: 23px;
+		font-weight: bold;
+		text-align: right;
+		padding-right: 50px;
+	}
+	
+	#mission-middle {
+		background-image: url(../images/mission-tab_03.png);
+		background-repeat: repeat-y;
+		padding: 10px;
+		font-size: 12px;
+		max-height: 100px;
+		text-align: left;
+	}
+	
+	#mission-bottom {
+		background-image: url(../images/mission-tab_05.png);
+		background-repeat: no-repeat;
+		max-height: 2px;
+		min-height: 2px;
+	}
+/* ************************************* END MISSION TAB CSS ************************************* */
+
+/* **************************************** LOGIN TAB CSS **************************************** */
+	#login-top {
+		background-image: url(../images/login-tab_01.png);
+		background-repeat: no-repeat;
+		max-height: 23px;
+		min-height: 23px;
+		font-weight: bold;
+		text-align: left;
+		padding-left: 50px;
+	}
+	
+	#login-middle {
+		background-image: url(../images/login-tab_03.png);
+		background-repeat: repeat-y;
+		padding: 10px;
+		text-align: right;
+	}
+	
+	#login-bottom {
+		background-image: url(../images/login-tab_05.png);
+		background-repeat: no-repeat;
+		max-height: 2px;
+		min-height: 2px;
+	}
+/* ************************************** END LOGIN TAB CSS ************************************** */
+
+/* **************************************** STATS TAB CSS **************************************** */
+	#stats-top {
+		background-image: url(../images/stats-tab_01.png);
+		background-repeat: no-repeat;
+		max-height: 2px;
+		min-height: 2px;
+	}
+	
+	#stats-middle {
+		background-image: url(../images/stats-tab_03.png);
+		background-repeat: repeat-y;
+		padding: 10px;
+		font-size: 12px;
+		text-align: left;
+	}
+	
+	#stats-bottom {
+		background-image: url(../images/stats-tab_05.png);
+		background-repeat: no-repeat;
+		max-height: 23px;
+		min-height: 23px;
+		font-weight: bold;
+		text-align: right;
+		padding-right: 50px;
+		line-height: 225%;
+	}
+/* ************************************** END STATS TAB CSS ************************************** */
+
+/* *************************************** CREDIT TAB CSS **************************************** */
+	#credit-top {
+		background-image: url(../images/credit-tab_01.png);
+		background-repeat: no-repeat;
+		max-height: 2px;
+		min-height: 2px;
+	}
+	
+	#credit-middle {
+		background-image: url(../images/credit-tab_03.png);
+		background-repeat: repeat-y;
+		padding: 10px;
+		text-align: center;
+	}
+	
+	#credit-bottom {
+		background-image: url(../images/credit-tab_05.png);
+		background-repeat: no-repeat;
+		max-height: 23px;
+		min-height: 23px;
+		font-weight: bold;
+		text-align: left;
+		padding-left: 50px;
+		line-height: 225%;
+	}
+	
+	ul.tab-list {
+		margin: 0px 0px 0px 15px;
+		padding: 0;
+	}
+/* ************************************* END CREDIT TAB CSS ************************************** */

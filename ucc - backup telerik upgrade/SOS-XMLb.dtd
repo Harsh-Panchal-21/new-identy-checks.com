@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+=================================================================== 
+                                                 UCC_Receipt. DTD 
+=================================================================== 
+ Receipt Packet returned from Jurisdiction  on a successful XML transmission 
+ This format is also used as a response to the Status request  
+=================================================================== 
+ Last modified on  02/14/2010 by Thomas M. Ose 
+=================================================================== 
+History 
+1.06  tmo   Initially started tracking file versions 
+1.07  tmo   Changed Status element to allow for passing of error details in the element 
+=================================================================== 
+ -->
+<!ELEMENT Document (XMLVersion, Header, Record+)>
+<!ELEMENT Record (PacketNum, SeqNumber, DocumentReceiptID, SubmitterRef, Status, StatusDate)>
+<!ELEMENT Header (Date)>
+<!ELEMENT PacketNum (#PCDATA)>
+<!ELEMENT SeqNumber (#PCDATA)>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT DocumentReceiptID (#PCDATA)>
+<!ELEMENT SubmitterRef (#PCDATA)>
+<!ELEMENT Status (#PCDATA)>
+<!ATTLIST Status 
+   value (OK | InternalProcessingError | EmptyDocument | InvalidXML | InProcess | IDNotFound | SendingACK | NoValue) 
+"NoValue" 
+>
+<!ELEMENT StatusDate (#PCDATA)>
+<!ELEMENT XMLVersion EMPTY>
+<!ATTLIST XMLVersion 
+   info (1.06 | 1.07) "1.07" 
+>

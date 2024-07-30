@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--This DTD is for the IACA suggested Electronic Filing of UCC documents using XML-->
+<!--Version: 05052010 Released: 05-05-2010  Author:  Thomas M. Ose-->
+<!-- 05/05/2010 tmo Added attachment information 
+<!--06/23/2003 tmo  Added additional fee element and also defined the attachment element with a MIME type-->
+<!--07/24/2002 tmo  Added LapseDate as an optional element, also removed Trust and TrustDate from the -->
+<!--                           SecuredName and Assignor elements since they really do not apply to these name references--
+<!--04/25/2002  tmo  Added ReturnURL, ReturnUserID and Return UserPWD to the Filer Element-->
+<!--03/17/2002  tmo  Removed Statement element form this DTD since it applies to Searching Only-->
+<!--08/17/2001  tmo  Initial release of this DTD level. This supercedes all previous versions-->
+<!ELEMENT Acknowledgement (FileNumber, FileDate, FileTime, LapseDate?, FeeAmount, AdditionalFees?, FilingOffice, FileStatus, Errors?)>
+<!ELEMENT ActionCode (#PCDATA)>
+<!ELEMENT AdditionalFees (#PCDATA)>
+<!ELEMENT AltFilingType (#PCDATA)>
+<!ELEMENT AltNameDesignation (#PCDATA)>
+<!ELEMENT AmendmentAction (#PCDATA)>
+<!ELEMENT AmendmentType (#PCDATA)>
+<!ELEMENT Assignor (Names+)>
+<!ELEMENT Attachment (MIMEType, TextData)>
+<!ELEMENT AuthDebtor (OrganizationName | IndividualName)>
+<!ELEMENT AuthSecuredParty (OrganizationName | IndividualName)>
+<!ELEMENT AuthorizingParty (AuthSecuredParty?, AuthDebtor?)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT ClientAccountNum (#PCDATA)>
+<!ELEMENT ColText (#PCDATA)>
+<!ELEMENT Collateral (ColText?, FSAProducts?, Attachment?)>
+<!ELEMENT ContactEmail (#PCDATA)>
+<!ELEMENT ContactFax (#PCDATA)>
+<!ELEMENT ContactName (#PCDATA)>
+<!ELEMENT ContactPhone (#PCDATA)>
+<!ELEMENT Counties (County+)>
+<!ELEMENT Country (#PCDATA)>
+<!ELEMENT County (#PCDATA)>
+<!ELEMENT CurrentName (OrganizationName | IndividualName)>
+<!ELEMENT DebtorAltCapacity (#PCDATA)>
+<!ELEMENT DebtorName (Names, DebtorAltCapacity?, Not-Indexed-Reason?, Trust?, TrustDate?)>
+<!ELEMENT Debtors (DebtorName+)>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT Designation (#PCDATA)>
+<!ELEMENT Document (XMLVersion?, Header, Record+, FileSignature?)>
+<!ELEMENT ErrorText (#PCDATA)>
+<!ELEMENT Errors (ErrorText+)>
+<!ELEMENT FeeAmount (#PCDATA)>
+<!ELEMENT FileDate (#PCDATA)>
+<!ELEMENT FileInRealEstate (Designation, RealEstateDescription, Names+)>
+<!ELEMENT FileNumber (#PCDATA)>
+<!ELEMENT FileSignature (#PCDATA)>
+<!ELEMENT FileStatus (#PCDATA)>
+<!ELEMENT FileTime (#PCDATA)>
+<!ELEMENT Filer (Names, ClientAccountNum, ContactName, ContactPhone, ContactEmail, ContactFax, ReturnURL, ReturnUserID?, ReturnUserPWD?)>
+<!ELEMENT FilingOffice (#PCDATA)>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT FSAProducts (Name-Code+)>
+<!ELEMENT Header (Filer, PacketNum?, Test)>
+<!ELEMENT IndividualName (LastName, FirstName, MiddleName, Suffix)>
+<!ELEMENT InitialFileDate (#PCDATA)>
+<!ELEMENT InitialFileNumber (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT LapseDate (#PCDATA)>
+<!ELEMENT Location (#PCDATA)>
+<!ELEMENT MailAddress (#PCDATA)>
+<!ELEMENT Mark (#PCDATA)>
+<!ELEMENT MiddleName (#PCDATA)>
+<!ELEMENT MIMEType EMPTY>
+<!ELEMENT MiscInfo (#PCDATA)>
+<!ELEMENT Name-Code (Years, Counties, Unit, Quantity, Location, Description)>
+<!ELEMENT Names ((OrganizationName | IndividualName), MailAddress, City, State, PostalCode, County?, Country?, TaxID?, OrganizationalType?, OrganizationalJuris?, OrganizationalID?, Mark?)>
+<!ELEMENT Not-Indexed-Reason (#PCDATA)>
+<!ELEMENT OrganizationName (#PCDATA)>
+<!ELEMENT OrganizationalID (#PCDATA)>
+<!ELEMENT OrganizationalJuris (#PCDATA)>
+<!ELEMENT OrganizationalType (#PCDATA)>
+<!ELEMENT PacketNum (#PCDATA)>
+<!ELEMENT PostalCode (#PCDATA)>
+<!ELEMENT Quantity (#PCDATA)>
+<!ELEMENT RealEstateDescription (#PCDATA)>
+<!ELEMENT Record (SeqNumber?, TransType, AmendmentType?, AmendmentAction?, InitialFileNumber?, InitialFileDate?, SubmitterRef?, ActionCode?, AltNameDesignation?, AltFilingType?, FileInRealEstate?, SearchToReflect?, MiscInfo?, CurrentName?, Debtors?, Secured?, Assignor?, Collateral?, AuthorizingParty*, Acknowledgement?)>
+<!ELEMENT ReturnURL (#PCDATA)>
+<!ELEMENT ReturnUserID (#PCDATA)>
+<!ELEMENT ReturnUserPWD (#PCDATA)>
+<!ELEMENT SearchToReflect (#PCDATA)>
+<!ELEMENT Secured (SecuredName+)>
+<!ELEMENT SecuredName (Names, Not-Indexed-Reason?)>
+<!ELEMENT SeqNumber (#PCDATA)>
+<!ELEMENT State (#PCDATA)>
+<!ELEMENT SubmitterRef (#PCDATA)>
+<!ELEMENT Suffix (#PCDATA)>
+<!ELEMENT TaxID (#PCDATA)>
+<!ELEMENT TextData (#PCDATA)>
+<!ELEMENT Test (#PCDATA)>
+<!ELEMENT TransType (#PCDATA)>
+<!ELEMENT Trust (#PCDATA)>
+<!ELEMENT TrustDate (#PCDATA)>
+<!ELEMENT Unit (#PCDATA)>
+<!ELEMENT Year (#PCDATA)>
+<!ELEMENT Years (Year+)>
+<!ELEMENT XMLVersion EMPTY>
+
+<!ATTLIST XMLVersion 
+  Version (01262006) "01262006" 
+>
+<!ATTLIST Test 
+  Choice (Yes | No) "No" 
+>
+<!ATTLIST TransType 
+  Type (Initial | Amendment) "Initial" 
+>
+<!ATTLIST SearchToReflect 
+  Type (AllDebtors | Debtor1 | Debtor2) "AllDebtors" 
+>
+<!ATTLIST AltFilingType 
+  AltType (AgLien | NonUCCFiling | TransmittingUtility | ManufacturedHome | PublicFinance | NOAltType) "NOAltType" 
+>
+<!ATTLIST AltNameDesignation 
+  AltName (Lessee-Lessor | Consignee-Consignor | Bailee-Bailor | Seller-Buyer | NOAltName) "NOAltName" 
+>
+<!ATTLIST AmendmentAction 
+  Action (DebtorAdd | DebtorChange | DebtorDelete | SecuredPartyAdd | SecuredPartyChange | SecuredPartyDelete | CollateralAdd | CollateralChange | CollateralDelete | CollateralRestate | CollateralAssign | NOAction) "NOAction" 
+>
+<!ATTLIST AmendmentType 
+  Type (AmendmentCollateral | AmendmentParties | Assignment | PartialAssignment | Continuation | TerminationDebtor | TerminationSecuredParty | NOType) "NOType" 
+>
+<!ATTLIST DebtorAltCapacity 
+  AltCapacity (Estate | Trust | Trustee | NOAltCapacity) "NOAltCapacity" 
+>
+<!ATTLIST Designation 
+  Type (Timber | AsExtractedCollateral | Fixture | NOType) "NOType" 
+>
+<!ATTLIST FileStatus 
+  Status (Accepted | Rejected | NOStatus) "NOStatus" 
+>
+<!ATTLIST OrganizationalType 
+  Type (Corporation | ForeignAssociation | GeneralPartnership | LimitedLiabilityCompany | 
+LimitedLiabilityLimitedPartnership | LimitedLiabilityPartnership | LimitedPartnership | 
+RegisteredLimitedLiabilityLimitedPartnership | SoleProprietorship | UnincorporatedAssociation | 
+UnincorporatedNonprofitAssociation | NOType) "NOType" 
+>
+<!ATTLIST MIMEType 
+  Type ( PDF) "PDF" 
+>

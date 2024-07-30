@@ -1,0 +1,198 @@
+﻿body 
+{
+    margin:0px;
+    padding:0px;
+    background:#ffffff00;
+    background-repeat:repeat;
+    font-family:Oxygen;
+}
+#main 
+{
+    -moz-box-shadow:0px 0px 10px 3px #777777;
+    -webkit-box-shadow:0px 0px 10px 3px #777777;
+     box-shadow:0px 0px 10px 3px #777777;
+     width:1025px; 
+     padding:20px; 
+}
+#headLeft
+{
+    width:648px;
+    height:141px;
+    background:url('../img/topHead.png');
+    background-repeat:no-repeat;
+    background-position:top left;
+}
+#headRight
+{
+    width:306px;
+    height:121px;
+    padding:10px;
+    background:url('../img/blueBack.png');
+    background-repeat:no-repeat;
+    background-position:center;
+}
+#content
+{
+    width:100%;
+    margin-top:20px;
+}
+#leftHeadNav
+{
+    padding:10px;
+}
+#leftHeadNav a
+{
+    color:White;
+    font-size:17px;
+    text-decoration:none;
+    line-height:16px;
+    padding-right:35px;
+}
+#leftHeadNav a:hover
+{
+    color:#EA2627;
+}
+#bottomLinkNav
+{
+    width:100%;
+    margin-top:20px;
+}
+.linkSolutions a:link{
+	background: #ffffff;
+	position: relative;
+	overflow: hidden;
+	width: 640px;
+	height: 500px;
+	float:right;
+	padding:7px;
+	-moz-box-shadow:0px 0px 10px 3px #777777;
+    -webkit-box-shadow:0px 0px 10px 3px #777777;
+     box-shadow:0px 0px 10px 3px #777777;
+     border:1px solid #efefef;	
+}
+img
+{
+    border:0;
+}
+#footer
+{
+    width:1000px;
+    padding:20px;
+}
+#idcBtmLinks
+{
+    float:left;
+    width:201px;
+}
+#nabps
+{
+    float:left;
+    width:201px;
+}
+#serviceLinks
+{
+    float:left;
+    width:462px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.btmSpacer
+{
+    float:left;
+    width:40px;
+    height:94px;
+    background:url('../img/whiteSpace.png');
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+#footer h1
+{
+    font-family:Oxygen;
+    font-size:24px;
+    color:White;
+    line-height:24px;
+    margin:0px;
+    padding:0px;
+}
+#footer a
+{
+    font-family:Oxygen;
+    font-size:14px;
+    color:White;
+    line-height:20px;
+    margin:0px;
+    padding:0px;
+    text-decoration:none;
+}
+#footer a:hover
+{
+    color:#ff0000;
+}
+#homeSlideHold
+{
+    width:100%;
+/*    background:url('../img/busSolutions.png');*/
+    background-repeat:no-repeat;
+    background-position:15px top;
+}
+h1
+{
+    font-size:30px;
+    color:#30368E;
+}
+p
+{
+    font-size:20px;
+    color:#30368E;
+}
+h2
+{
+    font-size:24px;
+    color:#30368E;
+}
+ul
+{
+    font-size:20px;
+    color:#30368E;
+}
+ul a
+{
+    font-size:20px;
+    color:#ff0000;
+    text-decoration:none;
+}
+ul a:hover
+{
+    font-size:20px;
+    color:#999999;
+    text-decoration:none;
+}
+a
+{
+    font-size:20px;
+    color:#ff0000;
+    text-decoration:none;	
+}
+a:hover
+{
+    font-size:20px;
+    color:#999999;
+    text-decoration:none;
+}
+strong
+{
+    font-weight:bold;
+}
+td p
+{
+    font-size:14px;
+}
